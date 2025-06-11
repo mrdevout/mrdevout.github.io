@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Segoe Script', cursive;
+            margin: 0;
+            padding: 20px;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .descripcion {
+            margin-top: 40px;
+        }
+
+        .carrusel {
+            margin-top: 50px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .imagenes {
+            display: flex;
+            width: calc(300px * 6); /* ajusta según cantidad de imágenes */
+            animation: desplazar 20s linear infinite;
+        }
+
+        .imagenes img {
+            width: 300px;
+            height: 200px;
+            margin-right: 10px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @keyframes desplazar {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="6c2969be-5611-476c-ba25-2e84aafbe918.png" alt="Logo">
+    </div>
+
+    <h1>Inicio</h1>
+    <p>Bienvenido a nuestra página dedicada a la comida mexicana. Aquí podrás explorar sabores, platillos y tradiciones culinarias de México.</p>
+
+    <div class="descripcion">
+        <h2>¿Qué encontrarás en nuestro sitio?</h2>
+        <ul>
+            <li><strong>Comida Típica Mexicana:</strong> Platillos tradicionales como el mole, tacos, enchiladas, tamales y más.</li>
+            <li><strong>Platillos Más Difíciles:</strong> Recetas complejas y elaboradas como chiles en nogada o cochinita pibil.</li>
+            <li><strong>Platillos Más Fáciles:</strong> Opciones simples como quesadillas, chilaquiles o sopes.</li>
+            <li><strong>Locales:</strong> Restaurantes y puestos recomendados donde puedes disfrutar estas delicias.</li>
+            <li><strong>Cocineros:</strong> Conoce a las personas expertas detrás de estas recetas, desde chefs hasta cocineras tradicionales.</li>
+        </ul>
+    </div>
+
+    <div class="carrusel">
+        <div class="imagenes">
+            <img src="download (1).jpg" alt="Comida 1">
+            <img src="download (2).jpg" alt="Comida 2">
+            <img src="download (3).jpg" alt="Comida 3">
+            <img src="download (4).jpg" alt="Comida 4">
+            <img src="download (5).jpg" alt="Comida 5">
+            <img src="download.jpg" alt="Comida 6">
+        </div>
+    </div>
+
+    <p><a href="file:///C:/Users/top/Documents/proyecto%20mena%202/paguinaweb.html">← Volver a la página principal</a></p>
+</body>
+</html>

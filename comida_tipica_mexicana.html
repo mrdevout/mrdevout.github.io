@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comida Típica Mexicana</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: 'Segoe Script', cursive;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 60px;
+    }
+
+    .carrusel-container {
+      position: relative;
+      width: 300px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .carrusel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carrusel img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .boton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .atras {
+      left: 0;
+    }
+
+    .adelante {
+      right: 0;
+    }
+
+    ul {
+      margin-top: 40px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="6c2969be-5611-476c-ba25-2e84aafbe918.png" alt="Logo">
+  </div>
+
+  <h1>Comida Típica Mexicana</h1>
+  <p>Descubre los platillos más tradicionales que representan la esencia de México.</p>
+
+  <!-- Carrusel -->
+  <div class="carrusel-container">
+    <div class="carrusel" id="carrusel">
+      <img src="download (6).jpg" alt="Plato 1">
+      <img src="download (7).jpg" alt="Plato 2">
+      <img src="download (8).jpg" alt="Plato 3">
+      <img src="download (9).jpg" alt="Plato 4">
+      <img src="download (10).jpg" alt="Plato 5">
+      <img src="download (11).jpg" alt="Plato 6">
+    </div>
+    <button class="boton atras" onclick="moverCarrusel(-1)">❮</button>
+    <button class="boton adelante" onclick="moverCarrusel(1)">❯</button>
+  </div>
+
+  <!-- Lista de platillos -->
+  <h2>Platillos y cómo prepararlos</h2>
+  <ul>
+    <li><strong>Tacos de Asada:</strong> Asar carne de res marinada, cortar en trozos y servir en tortillas con cebolla, cilantro y limón.</li>
+    <li><strong>Flautas:</strong> Rellenar tortillas con pollo o res, enrollar y freír. Servir con lechuga, crema y salsa.</li>
+    <li><strong>Sopes:</strong> Masa de maíz gruesa, frita y cubierta con frijoles, carne, lechuga, crema y queso.</li>
+    <li><strong>Pozole:</strong> Caldo con maíz cacahuazintle y carne de cerdo, acompañado con lechuga, rábanos, orégano y chile.</li>
+    <li><strong>Menudo:</strong> Caldo espeso con pancita de res, chile rojo y maíz. Tradicional en fines de semana.</li>
+    <li><strong>Enchiladas:</strong> Tortillas rellenas de pollo o queso, bañadas en salsa roja o verde, y gratinadas con queso.</li>
+  </ul>
+
+  <script>
+    let index = 0;
+
+    function moverCarrusel(direccion) {
+      const carrusel = document.getElementById("carrusel");
+      const total = carrusel.children.length;
+      index = (index + direccion + total) % total;
+      carrusel.style.transform = `translateX(-${index * 300}px)`;
+    }
+  </script>
+ <a class="regresar" href="file:///C:/Users/top/Documents/proyecto%20mena%202/paguinaweb.html">← Volver a la página principal</a>
+</body>
+</html>

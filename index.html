@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comida Mexicana</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Segoe Script', cursive;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        header img {
+            width: 250px;
+            height: auto;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .menu a {
+            display: block;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #e0e0e0;
+        }
+        .descripcion {
+            display: flex;
+            max-width: 1000px;
+            margin: 40px auto;
+            align-items: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+        .descripcion img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .descripcion p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <header>
+        <img src="6c2969be-5611-476c-ba25-2e84aafbe918.png" alt="Logo de comida mexicana">
+    </header>
+
+    <!-- MENÚ DE 6 CUADROS -->
+    <div class="menu">
+        <a href="inicio.html">Inicio</a>
+        <a href="comida_tipica_mexicana.html">Comida Típica Mexicana</a>
+        <a href="platillos_dificiles.html">Platillos Más Difíciles</a>
+        <a href="platillos_faciles.html">Platillos Más Fáciles</a>
+        <a href="locales.html">Locales</a>
+        <a href="cocineros.html">Cocineros</a>
+    </div>
+
+    <!-- DESCRIPCIÓN -->
+    <div class="descripcion">
+        <img src="download.jpg" alt="Tacos al pastor">
+        <p>
+            Esta página está hecha para proporcionar datos sobre la comida mexicana. 
+            Aquí encontrarás información detallada sobre los platillos más representativos del país, 
+            desde los más tradicionales hasta los más modernos. Descubre cómo se preparan, dónde encontrarlos, 
+            quiénes los cocinan y cómo varían de una región a otra. ¡Bienvenido al sabor de México!
+        </p>
+    </div>
+
+</body>
+</html>
